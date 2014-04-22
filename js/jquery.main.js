@@ -163,8 +163,8 @@ function initScrollPage(){
 					offsetWin = win.scrollTop() + header.outerHeight(),
 					offsetBox = parent.offset().top + parent.outerHeight() - subWrap.children().outerHeight();
 					
-				if(offsetWin > offsetBox) subWrap.addClass(fixedClass).css({top: header.outerHeight()});
-				else subWrap.removeClass(fixedClass).css({top: ''});
+//				if(offsetWin > offsetBox) subWrap.addClass(fixedClass).css({top: header.outerHeight()});
+//				else subWrap.removeClass(fixedClass).css({top: ''});
 			}
 		}
 		else{

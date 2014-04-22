@@ -536,7 +536,7 @@ section h2{
 .section-detail .txt{overflow:hidden;}
 .section-detail h1{
 	color:#0097ee;
-	font-size:52px;	line-height:50px;
+	font-size:40px;	line-height:50px;
 	margin: 0 0 15px;
 	letter-spacing: -2px;
 }
@@ -545,7 +545,8 @@ section h2{
 	float:left;
 	width:560px;
 }
-.section-detail p{margin:0;}
+.section-detail p{margin:0;font-size: 18px !important;
+}
 .section-detail address{margin: 13px 0 0;}
 address span{
 	display:inline-block;
@@ -652,7 +653,7 @@ address a{color:#54514f;}
 .section-perfomance .image-holder{margin: 0 0 25px;}
 .section-perfomance h2{
 	color:#0097ee;
-	font-size:20px;
+	font-size:20px !important;
 	letter-spacing:0;	line-height:25px;
 	margin:0;
 }
@@ -727,7 +728,7 @@ address a{color:#54514f;}
 	word-spacing: -1px;
 }
 .section-about .holder{
-	background:rgba(255, 255, 255, 0.5);
+	background:rgba(255, 255, 255, 0.1);
 	float:left;
 	left: 49.25%;
 	position:relative;
@@ -748,15 +749,17 @@ address a{color:#54514f;}
 }
 .section-about h1{
 	font-size:25px;	line-height:27px;
-	margin: 0 0 29px;
+	margin: 0 0 16px;
+	color:rgba(255, 255, 255, 0.5)
 }
 .section-about h2{margin: 0 0 19px -3px;}
-.section-about p{margin: 0 0 28px;}
+.section-about p{margin: 0 0 28px;color:rgba(255, 255, 255, 0.7);font-size: 22px !important;
+}
 .section-about .btn-more{
 	display:inline-block;
 	padding: 2px 0 0 48px;
 	position:relative;	vertical-align:top;
-	margin: 0 0 0 2px;
+	margin: 0 0 0 200px;
 }
 .section-about .btn-more:hover{text-decoration:none;}
 .section-about .btn-more:before{
@@ -790,10 +793,10 @@ address a{color:#54514f;}
 }
 .section-philosophy p{margin: 0 20px 42px;}
 /* search section styles */
-.section-search{
+.section-search {
 	font-family:'Montserrat', sans-serif;
 	left:0;
-	position:fixed;
+	position:absolute;
 	right:0;
 	top:102px;
 	z-index:5;
@@ -1019,8 +1022,10 @@ address a{color:#54514f;}
 	font:20px/22px 'Montserrat', sans-serif;
 	letter-spacing: 0px;
 }
-.section-results h2{margin: 0 0 12px;}
-.section-results p{margin: 0 0 20px;}
+.section-results h2{margin: 0 0 12px;font-size: 30px !important;
+}
+.section-results p{margin: 0 0 20px;font-size: 22px !important;
+}
 .results-list{
 	border-top:1px solid #d1d1d0;
 	font-size:20px;	line-height:30px;	list-style:none;
