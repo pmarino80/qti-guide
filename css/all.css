@@ -101,7 +101,7 @@ input[type=text],input[type=password],input[type=file],input[type=submit],in
 }
 /* header styles */
 #header{
-	background:rgba(255, 255, 255, 0.7);
+	background:rgba(255, 255, 255, 0.9);
 	border-bottom:1px solid #ecebeb;
 	left:0;
 	position:fixed;
@@ -518,6 +518,9 @@ section h2{
 }
 .partners-list li{
 	display:inline-block;	vertical-align:bottom;
+}
+.partners-list img {
+	width: 80%;
 }
 .partners-list img{max-width:100%;}
 /* dr. datails section styles */
