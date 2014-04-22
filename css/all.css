@@ -1,3 +1,5 @@
+/* @override http://pmarino80.github.io/qti-guide/css/all.css */
+
 *{max-height:10000px;}
 @-webkit-viewport{width:device-width;}
 @-moz-viewport{width:device-width;}
@@ -33,6 +35,16 @@
 .section-signup form .btn-submit:before{
 	background-image:url(../images/sprite.png);
 	background-repeat:no-repeat;
+}
+p {
+	font-size: 95% !important;
+}
+
+h2 {
+	font-size: 150% !important;
+}
+h3 {
+	font-size: 98% !important;
 }
 html,
 body,
@@ -292,7 +304,7 @@ input[type=text],input[type=password],input[type=file],input[type=submit],in
 	line-height:38px;
 	text-align:center;
 }
-.section-intro .holder{padding: 50px 0 98px;}
+.section-intro .holder{padding: 40px 0 60px;}
 .btn-down{
 	background-position:-270px 0;
 	display:block;
@@ -370,6 +382,7 @@ section h2{
 	position:relative;
 	width:100%;
 	z-index:1;
+	background: #EFF9FB;
 }
 .section-proffesional .slideset{
 	float:left;
@@ -386,7 +399,7 @@ section h2{
 	position:relative;
 	z-index:5;
 }
-.section-proffesional .txt .holder{padding: 108px 0 20px 595px;}
+.section-proffesional .txt .holder{padding: 100px 20px 40px 595px;}
 .section-proffesional h1{
 	color:#54514f;
 	font-size:25px;	line-height:27px;
@@ -455,7 +468,7 @@ section h2{
 .section-recommendation p{margin: 0 45px 16px;}
 .section-recommendation .recommendation{
 	color:#86d3ff;
-	font-size:75px;
+	font-size:62px;
 	letter-spacing:-4px;	line-height:85px;
 	padding: 0 14.1026% 44px;
 	word-spacing:3px;
