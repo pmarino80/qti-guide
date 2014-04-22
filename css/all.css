@@ -779,8 +779,8 @@ address a{color:#54514f;}
 	margin: 0 0 -2px;
 }
 .section-philosophy{
-	background:#54514f;
-	color:#fff;	line-height:42px;
+	background:#fff;
+	color:#54514F;	line-height:42px;
 	text-align:center;
 }
 /* philosophy section styles */
@@ -788,8 +788,7 @@ address a{color:#54514f;}
 .section-philosophy .heading{margin: 0 0 22px;}
 .section-philosophy .heading:before{background:#a4a2a1;}
 .section-philosophy .heading h1{
-	background:#54514f;
-	color:#a4a2a1;
+	color:#54514F;
 }
 .section-philosophy p{margin: 0 20px 42px;}
 /* search section styles */
