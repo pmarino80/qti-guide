@@ -304,7 +304,7 @@ input[type=text],input[type=password],input[type=file],input[type=submit],in
 	line-height:38px;
 	text-align:center;
 }
-.section-intro .holder{padding: 40px 0 60px;}
+.section-intro .holder{padding: 40px 0 50px;}
 .btn-down{
 	background-position:-270px 0;
 	display:block;
@@ -454,7 +454,7 @@ section h2{
 	font-size:26px;	line-height:38px;
 	text-align:center;
 }
-.section-recommendation .holder{padding: 76px 0 80px;}
+.section-recommendation .holder{padding: 46px 0 46px;}
 .section-recommendation .heading{margin: 0 0 29px;}
 .section-recommendation .heading:before{background:#66c5fc;}
 .section-recommendation .heading h1{
@@ -505,8 +505,7 @@ section h2{
 .section-health .heading{margin: 0 0 29px;}
 .section-health h2{margin: 0 0 24px;}
 .section-health p{margin: 0 95px 31px;}
-.section-health .image-holder{margin: 0 0 79px;}
-.section-health .image-holder img{max-width:100%;}
+
 /* partners section styles */
 .section-partners .holder{padding: 0 0 3px;}
 .section-partners .partners-list{	list-style:none;	margin: -1px 0 59px;	padding: 0;
