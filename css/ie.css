@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1200px){
+	.section-search .submit-holder,
+	.form-search .submit-holder{margin:0 -20px 0 0;}
+}
+@media only screen and (max-width: 768px){
+	.section-search .submit-holder,
+	.form-search .submit-holder{margin:10px auto 0;}
+}
+#header{background:url(../images/bg01.png);}
+.section-search .form-content,
+.section-welcome .form-search{background:url(../images/bg02.png);}
+.section-about .holder{background:url(../images/bg03.png);}
+.section-search .form-slide{background:url(../images/bg04.png);}
+.form-search .link-location{margin-right:20px;}
+.results-list > li{padding-left:53px;}
+.results-list > li:before{width:44px !important;}
