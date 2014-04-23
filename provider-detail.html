@@ -25,16 +25,6 @@
 		}
 	</script>
 	
-	<script src="" type="text/javascript">
-	$(document).on('click', '.browse', function(){
-	  var file = $(this).parent().parent().parent().find('.file');
-	  file.trigger('click');
-	});
-	$(document).on('change', '.file', function(){
-	  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
-	});
-	</script>
-	
 	<style>
 <style>
   .panel-default {
@@ -85,10 +75,6 @@
     padding: 20px 60px;
     font-size: 20px;
     color: white;
-  }
-  .file{
-    visibility:hidden;
-    position:absolute;
   }
 </style>
 
@@ -147,8 +133,8 @@
 							<div class="row">
 								<ul>
 									<li><a href="#">Overview</a></li>
-									<li><a href="#" class="active">Facilities </a></li>
-									<li><a href="#">Providers</a></li>
+									<li><a href="#">Facilities </a></li>
+									<li><a href="#" class="active">Providers</a></li>
 									<li><a href="#">Services</a></li>
 									<li><a href="#">Account Settings</a></li>
 								</ul>
@@ -160,44 +146,35 @@
 				<section class="section-campaigns">
 					<div class="container">
 						<div class="row">
-							<h3 class="page-header" style="margin-top:40px">Facility Details</h3>
+							<h3 class="page-header" style="margin-top:40px">Provider Details</h3>
 						</div>
 						<!-- Small boxes (Stat box) -->
 						<div class="row">
 						  <div class="col-lg-12 col-xs-12">
 						    <!-- small box -->
 						    <div class="panel panel-default">
-						      <div class="panel-heading">Facility Information
+						      <div class="panel-heading">Provider Information
 						      </div>
 						      <div class="panel-body">
 						        <div class="inner">
 				                   <div class="form-group">
-				                     <label class="col-sm-3 control-label" for="textinput">Facility Name:</label>
+				                     <label class="col-sm-3 control-label" for="textinput">Provider Name:</label>
 				                     <div class="col-sm-9">
-				                       <input type="text" placeholder="Facility Name" class="form-control" style="margin-bottom: 15px">
+				                       <input type="text" placeholder="Full Name" class="form-control" style="margin-bottom: 15px">
 				                     </div>
 				                   </div>
 				                   <div class="form-group">
-				                     <label class="col-sm-3 control-label" for="textinput">Address:</label>
+				                     <label class="col-sm-3 control-label" for="textinput">Credentials:</label>
 				                     <div class="col-sm-9">
-				                       <input type="text" placeholder="Street Address" class="form-control" style="margin-bottom: 15px">
-				                     </div>
-				                     <label class="col-sm-3 control-label" for="textinput"></label>
-				                     <div class="col-sm-9">
-				                       <input type="text" placeholder="Suite, Office, etc" class="form-control" style="margin-bottom: 15px">
+				                       <input type="text" placeholder="MD, PhD, etc." class="form-control" style="margin-bottom: 15px">
 				                     </div>
 				                   </div>
 				                   <div class="form-group">
-				                     <label class="col-sm-3 control-label" for="textinput"></label>
-				                   	<div class="col-sm-3">
-				                   	  		<input type="text" placeholder="City" class="form-control" style="margin-bottom: 15px">
-				                   	</div>
-				                   	<div class="col-sm-3">
-				                   	  		<input type="text" placeholder="State" class="form-control" style="margin-bottom: 15px">
-				                   	</div>
-				                   	<div class="col-sm-3">
-				                   	  		<input type="text" placeholder="Zip Code" class="form-control" style="margin-bottom: 15px">
-				                   	</div>
+				                     <label class="col-sm-3 control-label" for="textinput">Gender:</label>
+									<div class="col-sm-9"><div class="btn-group" style="margin-bottom: 15px">
+									  <button type="button" class="btn btn-default">Male</button>
+									  <button type="button" class="btn btn-default">Female</button>
+									</div></div>
 				                   </div>
 				                   <div class="form-group">
 				                     <label class="col-sm-3 control-label" for="textinput">Phone:</label>
@@ -222,57 +199,107 @@
 						    </div>
 						  </div>
 						  <div class="col-lg-12 col-xs-12">
+						    <div class="panel panel-default">
+						      <div class="panel-heading">Specialties Practiced
+						      </div>
+						      <div class="panel-body">
+						        <div class="inner">
+							        <div class="form-group">
+							          <label class="col-sm-3 control-label" for="textinput">Specialties:</label>
+							          <div class="col-sm-9">
+							            <textarea id="text" name="specialties" class="form-control"  style="margin-bottom: 15px"></textarea>
+							          </div>
+							        </div>
+							        <div class="form-group">
+							          <label class="col-sm-3 control-label" for="textinput">Practicing Since:</label>
+							        	<div class="col-sm-4">
+							        	  		<input type="text" placeholder="Month" class="form-control" style="margin-bottom: 15px">
+							        	</div>
+							        	<div class="col-sm-4">
+							        	  		<input type="text" placeholder="Year" class="form-control" style="margin-bottom: 15px">
+							        	</div>
+							        </div>
+							        <div class="form-group">
+							          <label class="col-sm-3 control-label" for="textinput">Accepting Patients:</label>
+							        	<div class="col-sm-9"><div class="btn-group" style="margin-bottom: 15px">
+							        	  <button type="button" class="btn btn-default">Yes</button>
+							        	  <button type="button" class="btn btn-default">No</button>
+							        	</div></div>
+							        </div>
+						        </div>
+						        <div class="icon">
+						          <i class="ion ion-bag"></i>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col-lg-12 col-xs-12">
+						    <div class="panel panel-default">
+						      <div class="panel-heading">About the Provider
+						      </div>
+						      <div class="panel-body">
+						        <div class="inner">
+									<div class="form-group">
+									  <div class="col-sm-12">
+									    <textarea id="text" rows="4" name="about" class="form-control" placeholder="" style="margin-bottom: 15px"></textarea>
+									  </div>
+									</div>
+						        </div>
+						      </div>
+						    </div>
 					      <div class="panel panel-default">
-					        <div class="panel-heading">Philosophy of Care
+					        <div class="panel-heading">Education Details
 					        </div>
 					        <div class="panel-body">
 					          <div class="inner">
 					    			<div class="form-group">
 					    			  <div class="col-sm-12">
-					    			    <textarea id="text" rows="4" name="about" class="form-control" placeholder="" style="margin-bottom: 15px"></textarea>
+					    			    <textarea id="text" rows="4" name="about" class="form-control" placeholder="Details about medical school, fellowship, etc." style="margin-bottom: 15px"></textarea>
 					    			  </div>
 					    			</div>
 					          </div>
 					        </div>
 					      </div>
 					      <div class="panel panel-default">
-					          <div class="panel-heading">Facility Logos and Photos
+					          <div class="panel-heading">Services Offered
 					          </div>
-					          <div class="panel-body">
+					          <div class="panel-body" style="background:white">
 					            <div class="inner">
 					      			<div class="col-sm-12">
-						      			<table class="table table-bordered table-striped" id="fieldsWrapper">
-						      			  <tr>
-						      			    <td>
-						      			      <input type="file" name="img[]" class="file">
-						      			      <div class="input-group col-xs-12">
-						      			        <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-						      			        <input type="text" class="form-control" disabled placeholder="Upload Image">
-						      			        <span class="input-group-btn">
-						      			          <button class="browse btn btn-primary" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-						      			        </span>
-						      			      </div>
-						      			    </td>
-						      			  </tr>
+						      			<table class="table table-condensed">  
+				      			        <thead>  
+				      			          <tr>  
+				      			            <th>Service</th>  
+				      			            <th>Type</th>  
+				      			            <th>Location</th>  
+				      			            <th>Price</th>
+				      			            <th></th>  
+				      			          </tr>  
+				      			        </thead>  
+				      			        <tbody>  
+				      			          <tr>  
+				      			            <td>Colonoscopy</td>  
+				      			            <td>Procedure</td>  
+				      			            <td>Integris Main</td>  
+				      			            <td>$2650</td>
+				      			            <td><a href="#">View</a></td>  
+				      			          </tr>  
+				      			          <tr>  
+											<td>Colonoscopy</td>  
+											<td>Procedure</td>  
+											<td>Integris Main</td>  
+											<td>$2650</td>
+											<td><a href="#">View</a></td>  
+				      			          </tr>  
+				      			          <tr>  
+											<td>Colonoscopy</td>  
+											<td>Procedure</td>  
+											<td>Integris Main</td>  
+											<td>$2650</td>
+											<td><a href="#">View</a></td>  
+				      			          </tr>  
+				      			        </tbody>  
 				      			      </table>
-		      			      		<div class='list-group gallery'>
-		      			                  <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-		      			                      <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-		      			                          <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-		      			                          <div class='text-right'>
-		      			                              <small class='text-muted'>Logo Image</small>
-		      			                          </div> <!-- text-right / end -->
-		      			                      </a>
-		      			                  </div> <!-- col-6 / end -->
-		      			                  <div class='col-lg-9'>
-		      			                      <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/620x320.png">
-		      			                          <img class="img-responsive" alt="" src="http://placehold.it/780x230" />
-		      			                          <div class='text-right'>
-		      			                              <small class='text-muted'>Featured Image</small>
-		      			                          </div> <!-- text-right / end -->
-		      			                      </a>
-		      			                  </div> <!-- col-6 / end -->
-		      			              </div>
 					            </div>
 					          </div>
 					        </div>
