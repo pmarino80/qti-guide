@@ -13,6 +13,8 @@
 	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
 	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+
+	
 	<script type="text/javascript">
 		if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
 			var msViewportStyle = document.createElement('style')
@@ -25,7 +27,6 @@
 		}
 	</script>
 	
-	<style>
 <style>
   .panel-default {
     border: 0px;
@@ -71,6 +72,66 @@
     color: white;
     
   }
+/* carousel */
+#campaigns-carousel 
+{
+  margin-top: 30px 0px 0px;
+}
+#campaigns-carousel h2 {
+	margin: 0px 0px 0px;
+	padding: 0px;
+}
+#campaigns-carousel h4 {
+	margin: 10px 0px 20px;
+	padding: 0px;
+	font-weight: normal !important;
+	color: #1999EB;
+	font-size: 28px;
+}
+#campaigns-carousel p {
+	margin: 12px 0px 0px 0px;
+	font-size: 24px !important;
+	font-weight: 400;
+}
+/* Control buttons  */
+#campaigns-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#campaigns-carousel .carousel-control.left  {
+  left: -22px;
+}
+/* Next button  */
+#campaigns-carousel .carousel-control.right {
+  right: -22px !important;
+}
+/* Changes the position of the indicators */
+#campaigns-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+#campaigns-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+#campaigns-carousel .carousel-indicators .active {
+  background: #333333;
+}  /* End carousel */
+  
+  .item blockquote {
+      border-left: none; 
+      margin: 0;
+  }
+  
+  .item blockquote img {
+      margin-bottom: 10px;
+  }
+  
 </style>
 
 	</style>
@@ -182,16 +243,67 @@
 						      </div>
 						      <div class="panel-body">
 						        <div class="inner">
-						          <img src="https://builder.divshot.com/img/placeholder-100x100.gif" width="100" style="float:left;padding:0px 10px;">
-						          <h3>Tues. <a href="#">6/15/14</a> at <a href="#">12:30 pm</a></h3>
-						          <p><strong>Dr. Sam Dahr:</strong> Vitrectomy</p>
-						        </div>
-						        <div class="icon">
-						          <i class="ion ion-bag"></i>
-						        </div>
+						          </div>
+						            <div class='col-md-offset-0 col-md-12'>
+						              <div class="carousel slide" data-ride="carousel" id="campaigns-carousel">
+						                <!-- Carousel Slides / Quotes -->
+						                <div class="carousel-inner">
+						                  <div class='col-md-offset-0 col-md-12 text-center' style="margin-bottom:30px">
+						                  <span style="font-size:30px;color:#1999EB;margin-bottom: 20px;">Prostate Cancer Treatment</span>
+						                  </div>
+						                  <div class="item active">
+						                    <blockquote>
+						                      <div class="row">
+						                        <div class="col-sm-3 text-center">
+						                        	<span class="badge" style="border-radius: 80px;padding: 20px 32px;font-size: 50px;">1</span>
+						                        </div>
+						                        <div class="col-sm-9">
+						                          <h2>$15,562</h2>
+						                          <p>Contributions</p>
+						                          <h2>$452</h2>
+						                        </div>
+						                      </div>
+						                    </blockquote>
+						                  </div>
+						                  <!-- Campaign 2 -->
+						                  <div class="item">
+											<blockquote>
+											  <div class="row">
+											    <div class="col-sm-3 text-center">
+											    	<span class="badge" style="border-radius: 80px;padding: 20px 32px;font-size: 50px;">2</span>
+											    </div>
+											    <div class="col-sm-9">
+											      <h2>$3,762</h2>
+											      <p>Contributions</p>
+											      <h2>$37</h2>
+											    </div>
+											  </div>
+											</blockquote>
+						                  </div>
+						                  <!-- Campaign 3 -->
+						                  <div class="item">
+											<blockquote>
+											  <div class="row">
+											    <div class="col-sm-3 text-center">
+											    	<span class="badge" style="border-radius: 80px;padding: 20px 32px;font-size: 50px;">3</span>
+											    </div>
+											    <div class="col-sm-9">
+											      <h2>$37,878</h2>
+											      <p>Contributions</p>
+											      <h2>$12,854</h2>
+											    </div>
+											  </div>
+											</blockquote>
+						                  </div>
+						                <!-- Carousel Buttons Next/Prev -->
+						                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
+						                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						              </div>                          
+						            </div>
+						          </div>
 						      </div>
 						      <div class="panel-footer">
-						        <a href="#" class="small-box-footer">View all Campaigns <i class="fa fa-arrow-circle-right"></i></a>
+						        <a href="#" class="small-box-footer">View all Campaigns <i class="glyphicon glyphicon-chevron-right"></i></a>
 						      </div>
 						    </div>
 						  </div>
