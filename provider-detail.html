@@ -76,6 +76,10 @@
     font-size: 20px;
     color: white;
   }
+  .file{
+    visibility:hidden;
+    position:absolute;
+  }
 </style>
 
 	</style>
@@ -304,6 +308,69 @@
 					          </div>
 					        </div>
 					      </div>
+					      <div class="panel panel-default">
+					          <div class="panel-heading">Provider Photos and Video
+					          </div>
+					          <div class="panel-body">
+					            <div class="inner">
+					      			<div class="col-lg-5">
+					          			<table class="table table-bordered table-striped" id="fieldsWrapper">
+					          			  <tr>
+					          			    <td>
+					          			      <input type="file" name="img[]" class="file">
+					          			      <div class="input-group col-xs-12">
+					          			        <span class="input-group-addon"><span class="glyphicon glyphicon-picture"></span></span>
+					          			        <input type="text" class="form-control" disabled placeholder="Upload Logo Image">
+					          			        <span class="input-group-btn">
+					          			          <button class="browse btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span> Browse</button>
+					          			        </span>
+					          			      </div>
+					          			    </td>
+					          			  </tr>
+					      		      </table>
+					      		      	<div class='list-group gallery'>
+					      		                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+					      		                    <img class="img-responsive" alt="" src="http://placehold.it/420x220" />
+					      	                        <div class="text-right">
+					      	                        <button type="button"  style="font-size:16px !important;" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+					      	                        </div>
+					      		                </a>
+					      		    	</div>
+					      		    </div>
+					      		    <div class="col-lg-7">
+					      		    	<table class="table table-bordered table-striped" id="fieldsWrapper">
+					      		    	  <tr>
+					      		    	    <td>
+					      		    	      <input type="file" name="img[]" class="file">
+					      		    	      <div class="input-group col-xs-12">
+					      		    	        <span class="input-group-addon"><span class="glyphicon glyphicon-picture"></span></span>
+					      		    	        <input type="text" class="form-control" disabled placeholder="Upload Featured Image">
+					      		    	        <span class="input-group-btn">
+					      		    	          <button class="browse btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span> Browse</button>
+					      		    	        </span>
+					      		    	      </div>
+					      		    	    </td>
+					      		    	  </tr>
+					      		      </table>
+					      		      	<div class='list-group gallery'>
+					      					<a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/620x320.png">
+					      					    <img class="img-responsive" alt="" src="http://placehold.it/780x284" />
+					      						<div class="text-right">
+					      						<button type="button"  style="font-size:16px !important;" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+					      						</div>
+					      	                </a>
+					      		    	</div>
+					      		    </div>
+					      		    <div class="form-group">
+					      		      <div class="col-lg-12">
+					      		        <textarea id="text" rows="4" name="about" class="form-control" placeholder="Add YouTube or Vimeo embed code here to add a video" style="margin-bottom: 15px"></textarea>
+					      		      </div>
+					      		    </div>
+					      		 </div>
+					          </div>
+					        </div>
+					      </div>
+					      
 					      <p>
 					      <button type="button" class="btn btn-primary"> Save </button>
 					      <button type="button" class="btn btn-link">Cancel</button>
