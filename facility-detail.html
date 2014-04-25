@@ -240,14 +240,14 @@
 					          </div>
 					          <div class="panel-body">
 					            <div class="inner">
-					      			<div class="col-sm-12">
+					      			<div class="col-lg-5">
 						      			<table class="table table-bordered table-striped" id="fieldsWrapper">
 						      			  <tr>
 						      			    <td>
 						      			      <input type="file" name="img[]" class="file">
 						      			      <div class="input-group col-xs-12">
 						      			        <span class="input-group-addon"><span class="glyphicon glyphicon-picture"></span></span>
-						      			        <input type="text" class="form-control" disabled placeholder="Upload Image">
+						      			        <input type="text" class="form-control" disabled placeholder="Upload Logo Image">
 						      			        <span class="input-group-btn">
 						      			          <button class="browse btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span> Browse</button>
 						      			        </span>
@@ -255,25 +255,40 @@
 						      			    </td>
 						      			  </tr>
 				      			      </table>
-		      			      		<div class='list-group gallery'>
-		      			                  <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-		      			                      <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-		      			                          <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-		      			                          <div class='text-right'>
-		      			                              <small class='text-muted'>Logo Image</small>
-		      			                          </div> <!-- text-right / end -->
-		      			                      </a>
-		      			                  </div> <!-- col-6 / end -->
-		      			                  <div class='col-lg-9'>
-		      			                      <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/620x320.png">
-		      			                          <img class="img-responsive" alt="" src="http://placehold.it/780x230" />
-		      			                          <div class='text-right'>
-		      			                              <small class='text-muted'>Featured Image</small>
-		      			                          </div> <!-- text-right / end -->
-		      			                      </a>
-		      			                  </div> <!-- col-6 / end -->
-		      			              </div>
-					            </div>
+				      			      	<div class='list-group gallery'>
+				      			                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+				      			                    <img class="img-responsive" alt="" src="http://placehold.it/420x320" />
+			      			                        <div class="text-right">
+			      			                        <button type="button"  style="font-size:16px !important;" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+			      			                        </div>
+				      			                </a>
+				      			    	</div>
+				      			    </div>
+				      			    <div class="col-lg-7">
+				      			    	<table class="table table-bordered table-striped" id="fieldsWrapper">
+				      			    	  <tr>
+				      			    	    <td>
+				      			    	      <input type="file" name="img[]" class="file">
+				      			    	      <div class="input-group col-xs-12">
+				      			    	        <span class="input-group-addon"><span class="glyphicon glyphicon-picture"></span></span>
+				      			    	        <input type="text" class="form-control" disabled placeholder="Upload Featured Image">
+				      			    	        <span class="input-group-btn">
+				      			    	          <button class="browse btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span> Browse</button>
+				      			    	        </span>
+				      			    	      </div>
+				      			    	    </td>
+				      			    	  </tr>
+				      			      </table>
+				      			      	<div class='list-group gallery'>
+											<a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/620x320.png">
+											    <img class="img-responsive" alt="" src="http://placehold.it/780x415" />
+												<div class="text-right">
+												<button type="button"  style="font-size:16px !important;" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+												</div>
+			      			                </a>
+				      			    	</div>
+				      			    </div>
+				      			 </div>
 					          </div>
 					        </div>
 					      </div>
