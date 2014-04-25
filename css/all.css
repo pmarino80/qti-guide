@@ -1304,7 +1304,7 @@ address a{color:#54514f;}
 	position:absolute;
 	top:0;
 }
-.fancy-appointment .modal-body{padding: 14px 125px 30px;}
+.fancy-appointment .modal-body{padding: 14px 100px 30px;}
 .fancy-appointment .subtitle{
 	color:#0097ee;
 	display:block;
@@ -1456,6 +1456,25 @@ address a{color:#54514f;}
 	position:relative;	vertical-align:top;
 }
 .fancy-appointment .modal-footer .button:before{
+	background-position:-210px 0;
+	content:"";
+	height:20px;
+	margin:-9px 0 0;
+	position:absolute;
+	right: 15px;
+	top:50%;
+	width:20px;
+}
+.fancy-appointment .modal-body .button{
+	background: #fd8301;
+	color:#fff;
+	display:inline-block;
+	font:14px/16px 'Montserrat', sans-serif;
+	padding: 12px 40px;
+	position:relative;
+	vertical-align:top;
+}
+.fancy-appointment .modal-body .button:before{
 	background-position:-210px 0;
 	content:"";
 	height:20px;
@@ -1954,6 +1973,51 @@ address a{color:#54514f;}
 	color:#fff;	float:left;	font-size:24px;	height:79px;	line-height:79px;	margin:0;	padding: 0 60px 0 28px;
 	text-align:left;
 	width:100%;}
+.section-combo form .twocolumns {width:180px;}
+/* Combination Login and Signup Modal */
+.section-combo{
+	color:#a8a8a8;
+	font:16px/18px 'Montserrat', sans-serif;
+}
+.section-combo h4{
+	color:#636466;
+	font:300 32px/39px 'Source Sans Pro', sans-serif;
+	margin: 0 0 15px;
+}
+.section-combo form input[type=email],
+.section-combo form input[type=password],
+.section-combo form input[type=text]{
+	background:none;
+	border:1px solid #d8d8d8;
+	float:left;
+	height:54px;
+	line-height:21px;
+	margin:0;
+	padding: 15px 19px 16px;
+	width:100%;
+}
+.section-combo form label{
+	float:left;
+	font-weight:400;
+	margin:0;
+	max-width:96%;
+}
+.section-combo input {
+	margin-bottom: 15px !important;
+}
+.section-combo form input[type=submit]{
+	background:none;
+	border:0;
+	color:#fff;
+	float:left;
+	font-size:24px;
+	height:79px;
+	line-height:79px;
+	margin:0;
+	padding: 0 60px 0 28px;
+	text-align:left;
+	width:100%;
+}
 /* styles for screens 1500px wide and narrower */
 @media only screen and (max-width: 1500px){
 	.section-welcome{height:auto;}
