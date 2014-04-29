@@ -728,7 +728,7 @@ address a{color:#54514f;}
 	word-spacing: -1px;
 }
 .section-about .holder{
-	background:rgba(255, 255, 255, 0.1);
+	background:rgba(0, 0, 0, 0.7);
 	float:left;
 	left: 49.25%;
 	position:relative;
@@ -750,10 +750,10 @@ address a{color:#54514f;}
 .section-about h1{
 	font-size:25px;	line-height:27px;
 	margin: 0 0 16px;
-	color:rgba(255, 255, 255, 0.5)
+	color:rgba(255, 255, 255, 0.8)
 }
 .section-about h2{margin: 0 0 19px -3px;}
-.section-about p{margin: 0 0 28px;color:rgba(255, 255, 255, 0.7);font-size: 22px !important;
+.section-about p{margin: 0 0 28px;color:rgba(255, 255, 255, 0.8);font-size: 22px !important;
 }
 .section-about .btn-more{
 	display:inline-block;
@@ -1474,6 +1474,7 @@ address a{color:#54514f;}
 	position:relative;
 	vertical-align:top;
 }
+
 .fancy-appointment .modal-body .button:before{
 	background-position:-210px 0;
 	content:"";
