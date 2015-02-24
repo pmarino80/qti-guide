@@ -1,254 +1,379 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OneDoc</title>
-	<link media="all" rel="stylesheet" href="css/bootstrap.min.css">
-	<link media="all" rel="stylesheet" href="css/fancybox.css">
-	<link media="all" rel="stylesheet" href="css/all.css">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.main.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
-	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
-	<script type="text/javascript">
-		if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
-			var msViewportStyle = document.createElement('style')
-			msViewportStyle.appendChild(
-				document.createTextNode(
-					'@-ms-viewport{width:auto !important}'
-				)
-			)
-			document.querySelector('head').appendChild(msViewportStyle)
-		}
-	</script>
+<meta charset="UTF-8">
+<meta name="description" content="Responsive Bootstrap App Landing Page Template">
+<meta name="keywords" content="Scout, Bootstrap, Landing page, Template, App, Mobile, Android, iOS">
+<meta name="author" content="Mizanur Rahman">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>Scout - FDC & Production Surveillance.</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-	<div id="wrapper">
-		<div class="w1">			<header id="header">
-				<div class="header-holder container">
-					<div class="row">
-						<div class="logo-holder box">
-							<strong class="logo"><a href="#">OneDoc</a></strong>
-						</div>
-						<div class="navbar-default" role="navigation">
-							<div class="navbar-header">
-								<button class="navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
-									<span class="sr-only"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							<div id="bs-navbar" class="navbar-collapse collapse">
-								<nav class="nav-holder box">
-									<ul id="nav">
-										<li><a href="#">About OneDoc</a></li>
-										<li><a href="#">RealDocTalk</a></li>
-										<li><a href="#">Press</a></li>
-										<li><a href="#">Contact Us</a></li>
-									</ul>
-								</nav>
-								<ul class="buttons-list box">
-<li><a href="dashboard.html" class="btn-login">Log In</a></li>
-<li><a href="sign-up.html">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Scout-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="http://wti.s3.amazonaws.com/scout-logo.png" alt=""></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="Scout-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/scout-top.png" alt="" style="opacity:1;">
 				</div>
-			</header>
-			<main id="main" role="main">
-				<section class="section-welcome">
-					<div class="txt container">						<div class="holder row">
-							<h1>An Online Marketplace to Find the Healthcare You Need.</h1>
-							<p>Find the procedure, doctor visit, lab test, or imaging study that you need.</p>
-						</div>					</div>
-					<div class="smooth-wrapp">
-						<form action="#" class="form-search">							<fieldset>								<div class="container">									<div class="row">
-										<div class="input-holder">											<span class="icon"></span>											<input type="text" placeholder="Find the Healthcare You Need">										</div>
-										<span class="location">In Oklahoma City</span>
-										<a href="search.html" class="link-location">Change Location</a>
-										<div class="submit-holder">
-											<input type="submit" value="Search">
-										</div>
-									</div>								</div>							</fieldset>						</form>
-					</div>
-					<img src="images/img01.jpg" alt="Image description" class="bg-image">
-				</section>
-				<section class="section-intro">
-					<div class="container">						<div class="holder row">
-							<a href="#section-gallery" class="btn-down btn-smooth">Scroll down</a>
-							<div class="heading">
-								<h1>How it Works</h1>
-							</div>
-							<h2>Healthcare Made Simple.</h2>
-							<p>The OneDoc marketplace allows you to search for everything from a basic checkup in a doctor’s office to a complex procedure in a hospital or surgery center.  Apples-to-apples comparisons can be made and pricing information is provided so you can find the health care that works for you.</p>
-							<div class="boxes-holder">
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon01.png" width="111" height="150" alt="Image description">
-									</div>
-									<h3>Find What You Need</h3>
-									<p>Search by doctor, provider, procedure, office visit, facility, imaging study, or lab test. We could use a bit more copy to fill out this section.</p>
-								</div>
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon02.png" width="120" height="120" alt="Image description">
-									</div>
-									<h3>Browse Prices and Information</h3>									<p>In addition to price, learn about the doctor or facility so that you can consider everything that’s important to you in making your decision</p>
-								</div>
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon03.png" width="146" height="128" alt="Image description">
-									</div>
-									<h3>Make an appointment</h3>									<p>Schedule your office visit,lab test, or imaging study.  For procedures, schedule an initial visit to meet the doctor and decide if things are right for you.</p>
-								</div>
-							</div>
-						</div>					</div>
-				</section>
-				<section id="section-gallery" class="section-proffesional carousel">
-					<div class="mask">						<div class="slideset">							<div class="slide">
-								<div class="txt container">
-									<div class="row">
-										<div class="holder">
-											<h1>RealDocTalk</h1>
-											<h2>Introducing RealDocTalk.</h2>
-											<p>Have you ever noticed that advertisements for health care don’t really capture what health care is about? RealDocTalk is when our doctors and providers talk about health care in a real way. No sugarcoating.   What is the outcome that matters, and how can you and the doctor work together to achieve it?</p>
-										</div>
-									</div>
-								</div>
-								<img src="images/slide101.jpg" alt="Image description" class="img-slide">
-							</div>
-							<div class="slide" style="background:#E1DDDA;">
-								<div class="txt container">
-									<div class="row">
-										<div class="holder">
-											<h1>RealDocTalk</h1>
-											<h2>Introducing RealDocTalk.</h2>
-											<p>What is the goal of surgery?  What are we hoping to achieve?  What defines success?  These questions often are not discussed, even in the doctor's office, but they are here as a part of RealDocTalk.</p><br><br>
-										</div>
-									</div>
-								</div>
-								<img src="images/slide102.jpg" alt="Image description" class="img-slide">
-							</div>
-							<div class="slide" style="background:#BBC1C1">
-								<div class="txt container">
-									<div class="row">
-										<div class="holder">
-											<h1>RealDocTalk</h1>
-											<h2>Introducing RealDocTalk.</h2>
-											<p>Every time you have a surgery, you have to sign an "informed consent," but how come those issues often aren’t discussed in person?  As search for providers, RealDocTalk gives you a sense of  doctors' view on these critical questions.  What are the benefits and the risks of the surgery or procedure?  How do we deal with complications?</p>
-										</div>
-									</div>
-								</div>
-								<img src="images/slide103.jpg" alt="Image description" class="img-slide">
-							</div>
-							<div class="slide" style="background:#E3E2E7">
-								<div class="txt container">
-									<div class="row">
-										<div class="holder">
-											<h1>Introducing RealDocTalk</h1>
-											<h2>Introducing RealDocTalk.</h2>
-											<p>RealDocTalk is more than a feature of our marketplace; it’s a philosophy that underpins everything we do.  Transparency,  not just about price, but about every aspect of how health care is delivered, so you can make the right decision for you.</p>
-										</div>
-									</div>
-								</div>
-								<img src="images/slide104.jpg" alt="Image description" class="img-slide">
-							</div>
-						</div>					</div>
-					<div class="pagination">
-						<!-- pagination generated here -->
-					</div>
-				</section>
-				<section class="section-recommendation">
-					<div class="container">						<div class="holder row">
-							<div class="heading">								<h1>Recommendations</h1>							</div>
-							<h2>Health Care Recommendations.</h2>
-							<p>Enter some information below &amp; OneDoc will provide some basic preventative care recommendations from sources such as the U.S. Preventative Services Task Force &amp; the American Cancer Society. OneDoc will show those recommendations as well as shopping options in your community for obtaining that health care.</p>
-							<div class="recommendation">
-								<p>I am a <span>32</span> year old <span>man</span> who <span>never smoked.</span> I am <span>5’9”</span> and weigh <span>145</span> pounds.</p>
-							</div>
-							<a href="#" class="button-section">Get Your Recommendation</a>
-						</div>					</div>
-				</section>
-				<section class="section-intro">					<div class="container">						<div class="holder row">
-							<div class="heading">
-								<h1>Health Care Campaigns</h1>
-							</div>
-							<h2>Help friends and family get the<br> health care they need.</h2>
-							<p>OneDoc allows an individual to select a procedure or surgery from our marketplace and ask
-							friends and loved ones to contribute towards the cost.  There can be no better gift! </p>
-							<div class="boxes-holder">
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon15.png" width="118" height="118" alt="Image description">
-									</div>
-									<h3>Start Your Campaign</h3>
-									<p>Search by doctor, provider, procedure,
-									office visit, facility, imaging study, or lab test.
-									We could use a bit more copy to fill
-									out this section.</p>
-								</div>
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon16.png" width="152" height="128" alt="Image description">
-									</div>
-									<h3>Tell Your Friends &amp; Family</h3>
-									<p>In addition to price, learn about the
-									doctor or facility so that you can consider
-									everything that’s important to you in
-									making your decision.</p>
-								</div>
-								<div class="box col-xs-4">
-									<div class="image-holder">
-										<img src="images/icon17.png" width="150" height="106" alt="Image description">
-									</div>
-									<h3>Collect Your Donations</h3>
-									<p>Schedule your office visit,lab test, or
-									imaging study.  For procedures, schedule an
-									initial visit to meet the doctor &amp; decide if
-									things are right for you.</p><br><br>
-								</div>
-							</div>
-							<a href="#" class="button-section">Start a Health Care Campaign</a>
-						</div>					</div>				</section>
-				<section class="section-partners">
-					<div class="container">
-						<div class="holder row">
-							<div class="heading">
-								<h1>Our Partners</h1>
-							</div>
-							<ul class="partners-list">								<li><a href="#"><img src="images/logo-boston-medical.png" alt="Image description"></a></li>								<li><a href="#"><img src="images/logo-vidant.png" alt="Image description"></a></li>								<li><a href="#"><img src="images/logo-pennstate.png" alt="Image description"></a></li>							</ul>
-							<ul class="partners-list">
-								<li><a href="#"><img src="images/logo-st-francis.png" alt="Image description"></a></li>
-								<li><a href="#"><img src="images/logo-st-john.png" alt="Image description"></a></li>
-								<li><a href="#"><img src="images/logo-integris.png" alt="Image description"></a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</main>		</div>
-		<footer id="footer">			<div class="f1">				<div class="f2">
-					<div class="container">
-						<div class="holder row">
-							<div class="get-started">
-								<div class="txt">									<h2>Get the Healthcare You Need.</h2>
-									<p>Our mission is to inform and empower  the individual’s choice of a physician, surgeon, facility, hospital, or health system.</p>								</div>
-								<a href="#" class="btn-started">Get Started</a>
-							</div>
-							<div class="footer-content">
-								<p class="copyright">&copy; Copyright OneDoc 2014</p>
-								<div class="frame">
-									<ul class="footer-nav">										<li><a href="#">About</a></li>										<li><a href="#">Contact</a></li>										<li><a href="#">Terms</a></li>										<li><a href="#">Privacy</a></li>									</ul>
-									<ul class="social-networks">										<li><a href="#" class="facebook">Facebook</a></li>										<li><a href="#" class="twitter">Twitter</a></li>										<li><a href="#" class="google">Google+</a></li>									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>			</div>		</footer>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Redefining Data Collection & Production Surveillance.</h1>
+					<h4 style="color:white;">Scout combines years of app development & industry expertise to reshape the digital experiences of tomorrow.</h4>
+					
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+		</div>
+		<!-- /END ROW -->
+		
 	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+
+<!-- /END SECTION -->
+
+<!-- =========================
+     SERVICES
+============================== -->
+<section class="services" id="services">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Scout FDC</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			List your app features and all the details Lorem ipsum dolor kadr
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_cloud-upload_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Purpose-built for interface design</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Scout was built from the ground up for interface design, with features like interaction, pixel-perfect rendering for web and CSS styling baked into its core.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_gift_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Streamline your workflow</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_chat_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>24/7 Support</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Learn more about what we’re building and get notified when we launch</h2>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+					
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+						
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+						
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		
+		
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<img src="http://wti.s3.amazonaws.com/scout-logo.png" alt="LOGO" class="responsive-img">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href=""><i class="social_facebook_square"></i></a></li>
+		<li><a href=""><i class="social_twitter_square"></i></a></li>
+		<li><a href=""><i class="social_googleplus_square"></i></a></li>
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2015 ScoutGroup LLC, All Rights Reserved
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
