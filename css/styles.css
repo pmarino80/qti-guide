@@ -503,7 +503,7 @@ object {
    SECTION:  TESTIMONIALS                 
 -----------------------------------------*/
 .testimonials {
-    background: url(../images/bg-2.jpg) no-repeat center fixed;
+    background: url(../images/gauge-bg.png) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
@@ -512,6 +512,7 @@ object {
 .testimonials .color-overlay {
     padding-top: 110px;
     padding-bottom: 110px;
+    background: RGBA(26, 153, 252, 0.8);
 }
 
 .testimonials .feedback {
