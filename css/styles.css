@@ -540,8 +540,11 @@ object {
 }
 
 .testimonials .feedback .message {
-    font-size: 18px;
-    font-style: italic;
+	color: white;
+	line-height: 36px;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 1px #514f4f;
     margin-top: 40px;
     margin-bottom: 30px;
 }
