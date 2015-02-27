@@ -476,9 +476,9 @@ header .intro-section .buttons {
 }
 
 .app-brief .phone-image {
-    max-width: 350px;
+    max-width: 400px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .app-brief .phone-image img {
@@ -501,7 +501,7 @@ header .intro-section .buttons {
 }
 
 .app-brief .left-align .feature-list li {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 .app-brief .left-align .feature-list li i {
