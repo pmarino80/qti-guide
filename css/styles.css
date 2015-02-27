@@ -274,13 +274,13 @@ h5 {
 -----------------------------------------*/
 
 header {
-    background: url(../images/pump-jack-and-oil-tank-m.jpg) no-repeat center top fixed;
+    background: url(../images/oilfield.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
             background-size: cover;
 }
 
 header .color-overlay {
-    min-height: 700px;
+    min-height: 900px;
 }
 
 header .full-screen {
@@ -292,13 +292,10 @@ header .full-screen {
 
 .sticky-navigation {
   min-height: 60px;
-  background: #FFFFFF;
+  background: #101820;
   border: none;
   padding: 0 !important;
   margin-bottom: 0 !important;
-  -webkit-backface-visibility: hidden;
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
 }
 
 .sticky-navigation .navbar-header img {
@@ -307,7 +304,7 @@ header .full-screen {
 }
 
 .sticky-navigation .main-navigation .current a {
-  color: #000000 !important;
+  color: #52AFFA !important;
   position: relative;
   outline: none;
 }
@@ -315,12 +312,12 @@ header .full-screen {
 .sticky-navigation .main-navigation li a {
   line-height: 30px;
   font-weight: 400;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFFFFF;
 }
 
 .sticky-navigation .main-navigation li a:hover {
-    color: #000000;
+    color: #52AFFA;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -507,7 +504,7 @@ object {
    SECTION:  TESTIMONIALS                 
 -----------------------------------------*/
 .testimonials {
-    background: url(../images/gauge-bg.png) no-repeat center fixed;
+    background: url(../images/gauge-blur.png) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
@@ -688,7 +685,7 @@ object {
 -----------------------------------------*/
 
 .download {
-    background: url('../images/scout-bg.png') no-repeat center fixed;
+    background: url('../images/app-blur.png') no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
