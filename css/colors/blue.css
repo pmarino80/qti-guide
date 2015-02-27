@@ -9,8 +9,7 @@ DEEP COLOR CODE: #005885
 ----------------------------------------- */
 
 .color-overlay {
-    background: #1D2E39;
-    opacity: 0.9;
+    background: RGBA(29, 46, 57, 0.9)
 }
 
 .standard-button {

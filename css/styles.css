@@ -220,6 +220,8 @@ h5 {
 .small-button:hover,
 .small-button2:hover {
     border: none;
+    background: #0082e8;
+    color: white;
 }
 
 .small-button i,
@@ -322,7 +324,7 @@ header .full-screen {
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-  min-height: 70px;
+  min-height: 60px;
   background: #101820;
   border: none;
   padding: 0 !important;
