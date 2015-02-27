@@ -1,3 +1,6 @@
+/* @override 
+	http://pmarino80.github.io/scout/css/styles.css */
+
 /* =======================================================================
 Kane - Responsive App Landing Page 1.7
 ======================================================================= */
@@ -146,8 +149,8 @@ h1 {
 }
 
 h2 {
-    font-size: 3.125rem;
-    line-height: 4.063rem;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 h3 {
@@ -463,8 +466,8 @@ header .intro-section .buttons {
 -----------------------------------------*/
 
 .app-brief {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .app-brief.grey-bg {
@@ -476,7 +479,7 @@ header .intro-section .buttons {
 }
 
 .app-brief .phone-image {
-    max-width: 400px;
+    max-width: 430px;
     margin: auto;
     margin-bottom: 0px;
 }
