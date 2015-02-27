@@ -198,6 +198,37 @@ h5 {
     font-size: 20px;
 }
 
+/*---------------------------------------
+   SMALL CUSTOM BUTTON              
+-----------------------------------------*/
+
+.small-button {
+    font-size: 14px;
+    font-weight: 400 !important;
+    border-radius: 145px !important;
+    text-shadow: 0 !important;
+    background: #1A99FC;
+    color: #ffffff;
+    min-width: 150px;
+    border: none;
+    padding: 6px 10px 6px 10px;
+    margin: 0px;
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+.small-button:hover,
+.small-button2:hover {
+    border: none;
+}
+
+.small-button i,
+.small-button2 i {
+    vertical-align: inherit;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
 
 /*---------------------------------------
    TEXTS               
@@ -291,7 +322,7 @@ header .full-screen {
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-  min-height: 60px;
+  min-height: 70px;
   background: #101820;
   border: none;
   padding: 0 !important;
@@ -299,7 +330,7 @@ header .full-screen {
 }
 
 .sticky-navigation .navbar-header img {
-  max-height: 30px;
+  max-height: 38px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -310,7 +341,7 @@ header .full-screen {
 }
 
 .sticky-navigation .main-navigation li a {
-  line-height: 30px;
+  line-height: 38px;
   font-weight: 400;
   font-size: 14px;
   color: #FFFFFF;
