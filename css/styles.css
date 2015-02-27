@@ -14,7 +14,7 @@ html {
 
 body {
     background: #ffffff;
-    font-family: Helvetica , sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #313131;
@@ -280,7 +280,7 @@ header {
 }
 
 header .color-overlay {
-    min-height: 900px;
+    min-height: 700px;
 }
 
 header .full-screen {
@@ -430,8 +430,12 @@ header .intro-section .buttons {
 -----------------------------------------*/
 
 .app-brief {
-    padding-top: 110px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.app-brief.grey-bg {
+    background: #eaecee !important;
 }
 
 .app-brief h2 {
@@ -807,6 +811,8 @@ footer .social-icons li a {
 
 footer .copyright {
     color: #808080;
+    font-weight: 400;
+    font-size: 14px;
     padding-top: 10px;
     margin-bottom: 50px;
 }
