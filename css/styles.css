@@ -185,13 +185,13 @@ h5 {
     border: none;
     padding: 16px 25px 16px 25px;
     margin: 5px;
-    -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
 }
 
 .standard-button:hover,
 .standard-button2:hover {
     border: none;
+    background: #1A99FC;
+    color: white;
 }
 
 .standard-button i,
